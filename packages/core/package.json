@@ -28,9 +28,9 @@
     "test": "vitest run"
   },
   "devDependencies": {
-    "happy-dom": "^15.11.7",
+    "happy-dom": "^20.9.0",
     "tsup": "^8.3.5",
-    "vitest": "^2.1.8"
+    "vitest": "^4.1.6"
   },
   "dependencies": {
     "@floating-ui/dom": "^1.7.6"
