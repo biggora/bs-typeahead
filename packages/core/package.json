@@ -1,7 +1,6 @@
 {
   "name": "@bs-typeahead/core",
   "version": "1.0.0-dev",
-  "private": true,
   "type": "module",
   "description": "Framework-agnostic typeahead for Bootstrap 5",
   "license": "MIT",

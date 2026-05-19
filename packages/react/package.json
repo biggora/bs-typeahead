@@ -1,7 +1,6 @@
 {
   "name": "@bs-typeahead/react",
   "version": "1.0.0-dev",
-  "private": true,
   "type": "module",
   "description": "React wrapper for @bs-typeahead/core",
   "license": "MIT",
