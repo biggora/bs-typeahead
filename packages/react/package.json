@@ -33,7 +33,7 @@
     "@testing-library/user-event": "^14.5.2",
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",
-    "happy-dom": "^15.11.7",
+    "happy-dom": "^20.8.9",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tsup": "^8.3.5",
