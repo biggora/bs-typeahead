@@ -1,0 +1,47 @@
+/*
+ * @bs-typeahead/core — supplementary styles.
+ * Bootstrap 5 already ships .dropdown-menu and .dropdown-item;
+ * these rules cover only what the framework does not.
+ */
+
+.typeahead-menu {
+  position: absolute;
+  z-index: 1050;
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.typeahead-menu[data-open='true'] {
+  display: block;
+}
+
+.typeahead-menu mark {
+  padding: 0;
+  background-color: transparent;
+  font-weight: 600;
+  color: inherit;
+}
+
+[data-loading='true'] {
+  background-image: linear-gradient(
+    -45deg,
+    transparent 40%,
+    rgba(0, 0, 0, 0.15) 40%,
+    rgba(0, 0, 0, 0.15) 60%,
+    transparent 60%
+  );
+  background-size: 0.75rem 0.75rem;
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  animation: typeahead-loading-stripes 0.8s linear infinite;
+}
+
+@keyframes typeahead-loading-stripes {
+  from {
+    background-position-x: calc(100% - 0.75rem);
+  }
+  to {
+    background-position-x: calc(100% - 1.5rem);
+  }
+}

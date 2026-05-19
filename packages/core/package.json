@@ -1,0 +1,39 @@
+{
+  "name": "@bs-typeahead/core",
+  "version": "1.0.0-dev",
+  "private": true,
+  "type": "module",
+  "description": "Framework-agnostic typeahead for Bootstrap 5",
+  "license": "MIT",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./styles.css": "./styles.css"
+  },
+  "files": [
+    "dist",
+    "styles.css"
+  ],
+  "sideEffects": [
+    "*.css"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "happy-dom": "^15.11.7",
+    "tsup": "^8.3.5",
+    "vitest": "^2.1.8"
+  },
+  "dependencies": {
+    "@floating-ui/dom": "^1.7.6"
+  }
+}

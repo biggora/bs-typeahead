@@ -1,56 +1,27 @@
 {
-  "name": "bootstrap-typeahead",
-  "description": "Twitter Bootstrap Ajax Typeahead Plugin",
-  "version": "0.0.5",
+  "name": "bs-typeahead",
+  "version": "1.0.0-dev",
   "private": true,
-  "keywords": [
-    "bootstrap",
-    "typeahead",
-    "autocomplete",
-    "ajax"
-  ],
-  "homepage": "https://github.com/biggora/bootstrap-ajax-typeahead",
-  "demopage": "http://plugins.upbootstrap.com/bootstrap-ajax-typeahead",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/biggora/bootstrap-ajax-typeahead.git"
+  "type": "module",
+  "license": "MIT",
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=20.11"
   },
-  "author": {
-    "name": "Twitter Inc.",
-    "url": "https://twitter.com/twitteross"
+  "scripts": {
+    "build": "pnpm -r --filter \"./packages/*\" build",
+    "test": "pnpm -r --filter \"./packages/*\" test",
+    "typecheck": "pnpm -r --filter \"./packages/*\" typecheck",
+    "lint": "eslint \"packages/**/*.{ts,tsx,js}\" --no-error-on-unmatched-pattern",
+    "format": "prettier --write \"packages/**/*.{ts,tsx,css,json,md}\"",
+    "dev": "pnpm --filter @bs-typeahead/playground dev"
   },
-  "contributors": [
-    {
-      "name": "Paul Warelis",
-      "url": "https://github.com/pwarelis"
-    },
-    {
-      "name": "Alexey Gordeyev",
-      "url": "https://github.com/biggora"
-    }
-  ],
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/biggora/bootstrap-ajax-typeahead/blob/master/LICENSE"
-    }
-  ],
-  "dependencies": {},
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-banner": "~0.2.0",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-copy": "~0.5.0",
-    "grunt-contrib-jshint": "~0.8.0",
-    "grunt-contrib-qunit": "~0.3.0",
-    "grunt-contrib-uglify": "~0.2.7",
-    "grunt-html-validation": "~0.1.13",
-    "grunt-jekyll": "~0.4.1",
-    "grunt-jscs-checker": "~0.3.0",
-    "grunt-saucelabs": "~4.1.2",
-    "grunt-sed": "~0.1.1",
-    "load-grunt-tasks": "~0.2.1",
-    "markdown": "~0.5.0"
+    "@eslint/js": "^9.17.0",
+    "@types/node": "^22.10.0",
+    "eslint": "^9.17.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.0"
   }
 }

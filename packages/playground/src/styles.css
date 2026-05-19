@@ -1,0 +1,39 @@
+body {
+  padding: 2rem 0;
+}
+
+.scenario-nav {
+  position: sticky;
+  top: 0;
+  background: var(--bs-body-bg, white);
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--bs-border-color, #dee2e6);
+  margin-bottom: 1.5rem;
+  z-index: 100;
+}
+
+.scenario-nav a.active {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.scenario-output {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.375rem;
+  background: var(--bs-success-bg-subtle, #d1e7dd);
+  border: 1px solid var(--bs-success-border-subtle, #badbcc);
+  display: none;
+}
+
+.scenario-output.visible {
+  display: block;
+}
+
+pre.code-sample {
+  background: var(--bs-tertiary-bg, #f8f9fa);
+  padding: 1rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  overflow-x: auto;
+}
